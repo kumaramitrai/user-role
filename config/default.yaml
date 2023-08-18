@@ -1,0 +1,26 @@
+server:
+    port: 3003
+    headerCtMaxAge: 86400
+
+logger:
+    level:
+        default: debug
+        console: debug
+
+postgres:
+  host: localhost
+  port: 5432
+  user: adminuser
+  password: Ha7@l@UspUgonus
+  database: assignment
+  ssl: false
+  max: 5
+  timeout: 2
+
+App:
+    maxUploadLimit: 25500000000 # in bytes (25.5 GB)
+    defaultRateLimit: 3 # reqs/sec
+
+jwt:
+    publickey: './src/secrets/publicKey.pem'
+    privatekey: './src/secrets/privateKey.pem'

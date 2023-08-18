@@ -1,0 +1,20 @@
+node:
+  env: development
+
+logger:
+  level:
+    default: debug
+    console: debug
+
+cors:
+  allowedOrigins: ["*"]
+
+postgres:
+  host: localhost
+  port: 5432
+  user: adminuser
+  password: Ha7@l@UspUgonus
+  database: assignment
+  ssl: false
+  max: 5
+  timeout: 2

@@ -1,0 +1,35 @@
+node:
+    env: NODE_ENV
+
+server:
+    port:
+        __name: SERVER_PORT
+        __format: number
+    cors:
+        allowedOrigins: ALLOWED_URLS
+jwt:
+    publickey: JWT_PUBLIC_KEY_PATH
+    privatekey: JWT_PRIVATE_KEY_PATH
+
+logger:
+    level:
+        default: LOGGER_DEFAULT_LEVEL
+        console: LOGGER_CONSOLE_LEVEL
+
+postgres:
+    host: POSTGRES_HOST
+    port:
+        __name: POSTGRES_PORT
+        __format: number
+    user: POSTGRES_USER
+    password: POSTGRES_PASSWORD
+    database: POSTGRES_DATABASE
+    ssl:
+        __name: POSTGRES_SSL
+        __format: boolean
+    max:
+        __name: POSTGRES_MAX
+        __format: number
+    timeout:
+        __name: POSTGRES_TIMEOUT
+        __format: number
