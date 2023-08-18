@@ -37,7 +37,10 @@ knex migrate:latest --env dev
 <!-- Run migration down to remove tables from Database  -->
 knex migrate:down --env dev
 
-# Knex configuration
+# make Build
+npm run build
+
+# run dev server
 npm run dev
 
 # Generate public key & private key
